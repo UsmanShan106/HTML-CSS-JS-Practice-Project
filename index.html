@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Practice Landing Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="text-white">
+    <section
+      id="hero"
+      class="vh-100 d-flex flex-column justify-content-center align-items-center text-center bg-dark"
+    >
+      <h1 class="display-4 fw-bold animate-text mb-3">
+        Just Code, Code and Code
+      </h1>
+      <a
+        href="#projects"
+        class="btn btn-outline-light btn-lg animate__animated animate__pulse animate__infinite"
+      >
+        See My JavaScript Practice
+        <i class="fas fa-arrow-down ms-2"></i>
+      </a>
+    </section>
+
+    <section id="projects" class="container py-5">
+      <h2 class="text-center mb-5">JavaScript Tools & Practice</h2>
+      <div class="row g-4">
+        <div class="project-container reverse-container">
+          <h3>Reverse String Tool</h3>
+          <input type="text" id="first" placeholder="Enter text here" />
+          <button id="rbtn">Reverse</button>
+          <input
+            type="text"
+            id="second"
+            readonly
+            placeholder="Reversed text appears here"
+          />
+        </div>
+
+        <div class="project-container formvalidation">
+          <form action="">
+            <h3>My form</h3>
+            <label for="name">Name</label>
+            <input type="text" id="name" />
+            <label for="email">Email</label>
+            <input type="email" id="email" />
+            <label for="password">Password</label>
+            <input type="password" id="password" />
+            <p id="Alert"></p>
+            <button type="submit" id="submitbtn">Submit</button>
+          </form>
+        </div>
+        <div class="counter">
+          <h3>The Counter</h3>
+          <button data-value="+">Increase</button>
+          <button data-value="-">Decrease</button>
+          <button data-value="&">Reset</button>
+          <div id="count"></div>
+        </div>
+        <div class="factorialSection">
+          <h3>Find Factorial</h3>
+          <input type="text" id="factvalue" />
+          <button id="factbtn">Find</button>
+          <input type="text" id="factanswer" readonly />
+        </div>
+        <div class="second-largest">
+          <h3>Second Largest Number Finder</h3>
+          <label for="numarray">Enter numbers separated by commas</label>
+          <input
+            type="text"
+            id="numarray"
+            placeholder="e.g. 23,45,67,12,89,45,67"
+          />
+          <button id="findsecond">Find Second Largest</button>
+          <p id="secondresult"></p>
+        </div>
+
+        <div class="bmi-calculator">
+          <h3>BMI Calculator</h3>
+          <label for="weight">Weight (kg)</label>
+          <input type="number" id="weight" placeholder="Enter weight" />
+          <label for="height">Height (m)</label>
+          <input type="number" id="height" placeholder="Enter height" />
+          <button id="bmibtn">Calculate BMI</button>
+          <p id="bmiresult"></p>
+        </div>
+
+        <div class="stopwatch">
+          <h3>Stopwatch</h3>
+          <div id="display">00:00:00</div>
+          <button id="start">Start</button>
+          <button id="stop">Stop</button>
+          <button id="reset">Reset</button>
+        </div>
+
+        <div class="temp-converter">
+          <h3>Temperature Converter</h3>
+          <input type="number" id="tempInput" placeholder="Enter temperature" />
+          <select id="conversionType">
+            <option value="CtoF">Celsius to Fahrenheit</option>
+            <option value="FtoC">Fahrenheit to Celsius</option>
+          </select>
+          <button id="convertBtn">Convert</button>
+          <input
+            type="number"
+            id="tempoutput"
+            placeholder="Result will appear here..."
+            readonly
+          />
+        </div>
+
+        <div class="largestword">
+          <h3>Largest Word From a sentence</h3>
+          <input type="text" id="sentInput" />
+          <button id="sentbtn">Find Largest</button>
+          <input type="text" id="sentOutput" readonly />
+        </div>
+
+        <div class="removedupls">
+          <h3>Remove duplicates from Array</h3>
+          <h6>Enter numbers seperated by comma (,) .</h6>
+          <input type="text" id="arrDInput" placeholder="E.g 1,2,3,4,5,..." />
+          <button id="arrDbtn">Remove Duplicates</button>
+          <input type="text" id="arrDOutput" readonly />
+        </div>
+
+        <div class="vowelcount">
+          <h3>Vowels count from a String</h3>
+          <input type="text" id="vowelInput" />
+          <button id="vowelbtn">Find Vowels</button>
+          <p id="vowelOutput"></p>
+        </div>
+
+        <div class="numSum">
+          <h3>Add digits of a number</h3>
+          <h6>Enter a Number</h6>
+          <input type="text" id="numSumInput" />
+          <button id="numSumbtn">Find Sum</button>
+          <p id="numSumOutput"></p>
+        </div>
+
+        <div class="ageCalc">
+          <h3>Calculate Your Age</h3>
+          <h6>Enter your DOB</h6>
+          <input type="date" id="dobInput" />
+          <button id="dobbtn">Find Age</button>
+          <p id="dobOutput"></p>
+        </div>
+
+        <div class="ArmStrong">
+          <h3>Check ArmStrong Numbers</h3>
+          <h6>Enter a 3-digit Number</h6>
+          <input type="text" id="ArmStrongInput" />
+          <button id="ArmStrongbtn">Check</button>
+          <p id="ArmStrongOutput"></p>
+        </div>
+
+        <div class="countCharacters">
+          <h3>Count occurences of character</h3>
+          <h6>Enter a string.</h6>
+          <input type="text" id="countInput" />
+          <button id="countbtn">Count</button>
+          <p id="countOutput"></p>
+        </div>
+
+        <div class="quiz-app">
+          <h3>Quiz App</h3>
+          <div id="question"></div>
+          <div id="options"></div>
+          <button id="submitBtn">Submit</button>
+          <div id="result" []></div>
+        </div>
+
+        <div class="simple-interest-calculator">
+          <h3>Simple Interest Calculator</h3>
+          <label for="principal">Principal Amount:</label>
+          <input type="number" id="principal" placeholder="Enter Principal" />
+          <label for="rate">Rate of Interest (%):</label>
+          <input type="number" id="rate" placeholder="Enter Rate" />
+          <label for="time">Time (years):</label>
+          <input type="number" id="time" placeholder="Enter Time" />
+          <button id="calculateBtn">Calculate</button>
+          <p id="siOutput">Simple Interest will appear here...</p>
+        </div>
+
+        <div class="percentage-calculator">
+          <h3>Percentage Calculator</h3>
+          <input
+            type="number"
+            id="obtainedMarks"
+            placeholder="Obtained Marks"
+          />
+          <input type="number" id="totalMarks" placeholder="Total Marks" />
+          <button id="calcBtn">Calculate</button>
+          <p id="percentageOutput"></p>
+        </div>
+
+        <div class="grade-analyzer">
+          <h3>Student Grade Analyzer</h3>
+          <input type="text" id="studentName" placeholder="Enter name" />
+          <input type="number" id="studentMarks" placeholder="Enter marks" />
+          <button id="addBtn">Add Student</button>
+          <button id="showAllBtn">Show All</button>
+          <button id="showTopBtn">Show >80</button>
+          <div id="allStudents"></div>
+          <div id="topStudents"></div>
+        </div>
+
+        <div class="box">
+          <div class="boxHead">Your Todo's List</div>
+          <div id="boxMid" class="boxMid"></div>
+          <div class="boxBottom">
+            <button id="addtodobtn">Add New Todo</button>
+            <button id="cleartodobtn" class="clearlistbtn">Clear List</button>
+          </div>
+        </div>
+
+        <div class="calculator">
+          <h1>A Simple Calculator</h1>
+          <input
+            type="text"
+            id="num1"
+            placeholder="Enter first number"
+            oninput="getvalues()"
+          />
+          <input
+            type="text"
+            id="num2"
+            placeholder="Enter second number"
+            oninput="getvalues()"
+          />
+          <h3 id="result">Result will appear here</h3>
+          <div class="btn-container">
+            <button id="addbtn">Add</button>
+            <button id="subtractbtn">Subtract</button>
+            <button id="multiplybtn">Multiply</button>
+            <button id="dividebtn">Divide</button>
+            <button id="clearbtn">Clear</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="text-center py-4 bg-dark border-top border-light">
+      <p class="mb-0">
+        &copy; 2025 Usman's JavaScript Practice | Built with ❤️ and Bootstrap
+      </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
